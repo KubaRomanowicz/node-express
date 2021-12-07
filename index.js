@@ -9,6 +9,10 @@ app.get('/', function(req, res) {
 app.listen(port, function() {
     console.log(`Example app listening on port ${port}!`)
 });
+const wiki = require('./wiki.js');
+// ...
+app.use('/wiki', wiki);
+
 
 
 
